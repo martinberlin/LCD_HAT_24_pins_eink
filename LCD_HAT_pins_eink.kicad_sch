@@ -5,11 +5,12 @@
 	(uuid "9ace1ea2-fe32-42b9-a35c-4c1c5b2f3f56")
 	(paper "A4")
 	(title_block
-		(title "Feather and Nano to LCD HAT")
+		(title "Feather and Nano to LCD HAT + 24 pins SPI Eink")
 		(date "2023-01-30")
 		(rev "1.0")
 		(company "BitBank Software, Inc.")
-		(comment 1 "A convenient board to test SPI LCDs")
+		(comment 1 "A convenient board to test SPI LCDs and Eink")
+		(comment 2 "Fork of original idea by FASANI CORP.")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
@@ -5812,16 +5813,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 107.95) (xy 40.64 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a52f2bc-3451-426b-818a-e62218997150")
-	)
-	(wire
-		(pts
 			(xy 248.285 78.105) (xy 250.825 78.105)
 		)
 		(stroke
@@ -5849,16 +5840,6 @@
 			(type default)
 		)
 		(uuid "1eb6162f-2707-4cec-8433-ba91cb6bd743")
-	)
-	(wire
-		(pts
-			(xy 26.67 105.41) (xy 35.56 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ee206ea-d834-4d2a-b102-21215c311f1f")
 	)
 	(wire
 		(pts
@@ -6409,6 +6390,16 @@
 			(type default)
 		)
 		(uuid "67a82c79-5fe5-4aa7-864e-d2bd151a0697")
+	)
+	(wire
+		(pts
+			(xy 35.56 92.075) (xy 39.37 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c869769-8305-45c8-9fd3-89f48d608233")
 	)
 	(wire
 		(pts
@@ -7082,6 +7073,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 87.63) (xy 35.56 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d52b0222-f672-4f1a-b27d-10c263889ae5")
+	)
+	(wire
+		(pts
 			(xy 234.315 55.245) (xy 234.315 56.515)
 		)
 		(stroke
@@ -7139,16 +7140,6 @@
 			(type default)
 		)
 		(uuid "d9d6dd1c-ca30-4c3b-84ac-0b9810110301")
-	)
-	(wire
-		(pts
-			(xy 35.56 87.63) (xy 35.56 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da7c10f0-fc3d-44b1-a6ec-e28f39d00bfb")
 	)
 	(wire
 		(pts
@@ -11775,7 +11766,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 40.64 107.95 0)
+		(at 39.37 92.075 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11784,7 +11775,7 @@
 		(fields_autoplaced yes)
 		(uuid "e23c55a5-c240-456f-a0d5-5161d45d64fd")
 		(property "Reference" "#PWR02"
-			(at 40.64 111.76 0)
+			(at 39.37 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11793,7 +11784,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 40.64 102.87 0)
+			(at 39.37 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11801,7 +11792,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 107.95 0)
+			(at 39.37 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11810,7 +11801,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 107.95 0)
+			(at 39.37 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11819,7 +11810,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 40.64 107.95 0)
+			(at 39.37 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12028,73 +12019,6 @@
 			(project "LCD_HAT_pins_eink"
 				(path "/9ace1ea2-fe32-42b9-a35c-4c1c5b2f3f56"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 21.59 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee790db2-8d56-4ca5-9fcf-b4bdc5cb3929")
-		(property "Reference" "J4"
-			(at 22.225 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_JUMPER"
-			(at 22.225 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 21.59 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 21.59 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6608f1ec-9cb9-430f-afab-854e152bf747")
-		)
-		(pin "2"
-			(uuid "007990e1-e4fd-4956-8718-8146f47d5e72")
-		)
-		(instances
-			(project "LCD_HAT"
-				(path "/9ace1ea2-fe32-42b9-a35c-4c1c5b2f3f56"
-					(reference "J4")
 					(unit 1)
 				)
 			)
