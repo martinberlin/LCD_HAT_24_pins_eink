@@ -3254,7 +3254,7 @@
 			(uuid "eabe9f34-f26a-4cb2-ba3c-d154cd1717ec")
 		)
 		(embedded_fonts no)
-		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T_NO_Vertical_Wuerth_434133025816.wrl"
+		(model "${KIPRJMOD}/components/3d/SW-SMD_4P-L4.2-W3.3-P2.15-LS5.2.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7783,7 +7783,7 @@
 			(uuid "62518741-4cc3-4afb-9b81-60bf87fb9230")
 		)
 		(embedded_fonts no)
-		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T_NO_Vertical_Wuerth_434133025816.wrl"
+		(model "${KIPRJMOD}/components/3d/SW-SMD_4P-L4.2-W3.3-P2.15-LS5.2.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
