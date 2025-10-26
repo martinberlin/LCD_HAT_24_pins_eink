@@ -9329,7 +9329,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 74.93 125.7299 0)
 			(effects
 				(font
@@ -9364,7 +9364,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C11702"
 			(at 72.39 124.46 0)
 			(effects
 				(font
@@ -10383,7 +10383,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 97.79 125.7299 0)
 			(effects
 				(font
@@ -10418,7 +10418,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25804"
+		(property "LCSC" "C11702"
 			(at 95.25 124.46 0)
 			(effects
 				(font
